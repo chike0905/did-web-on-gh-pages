@@ -1,14 +1,23 @@
 const { randomBytes } = require('crypto');
 const secp256k1 = require('secp256k1');
 const bs58 = require('bs58');
+const fs = require('fs');
 
 // Setting
 const DOMAIN = 'chike.xyz';
 const GH_PROJECT = 'id-web-on-gh-pages';
 
 
-// MAIN
+// Templates
 const DID = `did:web:${DOMAIN}:${GH_PROJECT}`;
+const DID_DOCUMENT_FRAME = {
+  "@context": "https://www.w3.org/ns/did/v1",
+  "id": '',
+  "verificationMethod": [],
+  "authentication": [],
+  "assertionMethod": [],
+}
+
 const main = async () => {
   // generate privKey
   let privKey
@@ -25,8 +34,15 @@ const main = async () => {
     "controller": `${DID}`,
     "publicKeyBase58": bs58.encode(pubKey)
   }
+  const didDocument = DID_DOCUMENT_FRAME;
+  didDocument.id = key.controller;
+  didDocument.verificationMethod = [key];
+  didDocument.authentication = [key.id];
+  didDocument.assertionMethod = [key.id];
 
-  console.log(JSON.stringify(key, null, 2));
+  console.log('===GENERATED DID DOCUMENT===');
+  console.log(JSON.stringify(didDocument, null, 2));
+  fs.writeFileSync('./docs/.well-known/did.json', JSON.stringify(didDocument, null, 2));
 };
 
 main();
