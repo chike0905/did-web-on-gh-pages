@@ -1,6 +1,0 @@
-{
-  "id": "did:web:chike.xyz:id-web-on-gh-pages#key1",
-  "type": "Ed25519VerificationKey2018",
-  "controller": "did:web:chike.xyz:id-web-on-gh-pages",
-  "publicKeyBase58": "vUH2XpELGNZjPecXzMrE9A53biByfon8UKj38vEvRFnE"
-}

@@ -6,7 +6,7 @@
       "id": "did:web:chike.xyz:did-web-on-gh-pages#key1",
       "type": "Ed25519VerificationKey2018",
       "controller": "did:web:chike.xyz:did-web-on-gh-pages",
-      "publicKeyBase58": "mjscJNVUmwYxNTjciXdbWpQuHD73rxGoxgQb39LhT9K6"
+      "publicKeyBase58": "2BXDYEWZrfwpDTVh78GFYFmLxp1b6yQ316eDxMDh1aq4p"
     }
   ],
   "authentication": [

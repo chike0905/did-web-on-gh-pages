@@ -42,7 +42,7 @@ const main = async () => {
 
   console.log('===GENERATED DID DOCUMENT===');
   console.log(JSON.stringify(didDocument, null, 2));
-  fs.writeFileSync('./docs/.well-known/did.json', JSON.stringify(didDocument, null, 2));
+  fs.writeFileSync('./docs/did.json', JSON.stringify(didDocument, null, 2));
 };
 
 main();
