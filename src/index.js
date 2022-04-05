@@ -5,7 +5,7 @@ const fs = require('fs');
 
 // Setting
 const DOMAIN = 'chike.xyz';
-const GH_PROJECT = 'id-web-on-gh-pages';
+const GH_PROJECT = 'did-web-on-gh-pages';
 
 
 // Templates
