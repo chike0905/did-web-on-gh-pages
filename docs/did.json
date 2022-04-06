@@ -4,9 +4,14 @@
   "verificationMethod": [
     {
       "id": "did:web:chike.xyz:did-web-on-gh-pages#key1",
-      "type": "Ed25519VerificationKey2018",
+      "type": "EcdsaSecp256k1VerificationKey2019",
       "controller": "did:web:chike.xyz:did-web-on-gh-pages",
-      "publicKeyBase58": "2BXDYEWZrfwpDTVh78GFYFmLxp1b6yQ316eDxMDh1aq4p"
+      "publicKeyJwk": {
+        "kty": "EC",
+        "x": "HzeyP9LSQubPdZeXIAtQA3KNmKiUVwazHwl-pywU5YA",
+        "y": "M-ph3R3BIyAmx1RgSJVRdWGZkJLqqhfTvEAAoIOpQ_U",
+        "crv": "secp256k1"
+      }
     }
   ],
   "authentication": [

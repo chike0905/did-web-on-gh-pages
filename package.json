@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "generate": "node src/index.js",
+    "generate": "node src/generate.js",
+    "demo": "node src/demo.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +19,8 @@
   },
   "homepage": "https://github.com/chike0905/did-web-on-gh-pages#readme",
   "dependencies": {
-    "bs58": "^5.0.0",
-    "secp256k1": "^4.0.3"
+    "did-jwt": "^6.0.0",
+    "jose": "^4.6.0",
+    "web-did-resolver": "^2.0.14"
   }
 }
