@@ -6,7 +6,7 @@ const CONFIG = require('./config.json');
 
 
 // Templates
-const DID = `did:web:${CONFIG.DOMAIN}:${CONFIG.GH_PROJECT}`;
+const DID = `did:web:${CONFIG.DOMAIN}:${CONFIG.REPOSITORY}`;
 const DID_DOCUMENT_FRAME = {
   "@context": "https://www.w3.org/ns/did/v1",
   "id": '',
