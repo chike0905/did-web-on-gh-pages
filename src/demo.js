@@ -2,7 +2,7 @@ const jose = require('jose');
 const crypto = require('crypto');
 
 const CONFIG = require('./config.json');
-const DID = `did:web:${CONFIG.DOMAIN}:${CONFIG.GH_PROJECT}`;
+const DID = `did:web:${CONFIG.DOMAIN}:${CONFIG.REPOSITORY}`;
 const JWK = require('../keys/jwk.json');
 
 
@@ -34,7 +34,13 @@ const main = async () => {
     audience: 'urn:example:audience'
   }).catch((e) => {
     console.error(e);
-  })
+    return undefined;
+  });
+  if (verificationResponse === undefined) {
+    console.log('Verify JWK Failed')
+    return;
+  }
+  console.log('Verify JWK Success')
   console.log(verificationResponse)
 }
 

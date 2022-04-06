@@ -8,16 +8,8 @@
     "demo": "node src/demo.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chike0905/did-web-on-gh-pages.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/chike0905/did-web-on-gh-pages/issues"
-  },
-  "homepage": "https://github.com/chike0905/did-web-on-gh-pages#readme",
   "dependencies": {
     "did-jwt": "^6.0.0",
     "jose": "^4.6.0",
