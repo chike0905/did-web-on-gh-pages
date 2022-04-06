@@ -1,23 +1,23 @@
 {
   "@context": "https://www.w3.org/ns/did/v1",
-  "id": "did:web:chike.xyz:did-web-on-gh-pages",
+  "id": "did:web:chike.xyz:undefined",
   "verificationMethod": [
     {
-      "id": "did:web:chike.xyz:did-web-on-gh-pages#key1",
+      "id": "did:web:chike.xyz:undefined#key1",
       "type": "EcdsaSecp256k1VerificationKey2019",
-      "controller": "did:web:chike.xyz:did-web-on-gh-pages",
+      "controller": "did:web:chike.xyz:undefined",
       "publicKeyJwk": {
         "kty": "EC",
-        "x": "Q8K-3ko4uNbgs_mUTyxEijaMGVIkG8Tc4mASu0B4kco",
-        "y": "437AbRRmvyiCk8NNsysAIvYfGKkzpY_xoLOBjosVPeo",
+        "x": "qKsIRJFLSRHS-BQt0T1-G5OuV-6PzUXLfC5qWfOlmj8",
+        "y": "Ot29yFZqvV8NfsVVgJxakH7cW4ddREitXGbEEKfurXc",
         "crv": "secp256k1"
       }
     }
   ],
   "authentication": [
-    "did:web:chike.xyz:did-web-on-gh-pages#key1"
+    "did:web:chike.xyz:undefined#key1"
   ],
   "assertionMethod": [
-    "did:web:chike.xyz:did-web-on-gh-pages#key1"
+    "did:web:chike.xyz:undefined#key1"
   ]
 }
