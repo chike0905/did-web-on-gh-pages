@@ -1,9 +1,23 @@
 const jose = require('jose');
 const fs = require('fs');
+const readlineSync = require('readline-sync');
 
 // Setting
 const CONFIG = require('./config.json');
+const { exit } = require('process');
 
+// Validate Config
+if (CONFIG.DOMAIN == '{GitHubUserName}.github.io') {
+  console.log(`ERROR: Domain in config.json is default ({GitHubUserName}.github.io). Please set your domain.`)
+  exit(1);
+}
+
+if (CONFIG.REPOSITORY == 'did-web-on-gh-pages') {
+  console.log(`WARN: Domain in config.json is default (did-web-on-gh-pages).`);
+  if (!readlineSync.keyInYN(`Is the repository name correct?`)) {
+    exit(1);
+  }
+}
 
 // Templates
 const DID = `did:web:${CONFIG.DOMAIN}:${CONFIG.REPOSITORY}`;

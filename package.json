@@ -13,6 +13,7 @@
   "dependencies": {
     "did-jwt": "^6.0.0",
     "jose": "^4.6.0",
+    "readline-sync": "^1.4.10",
     "web-did-resolver": "^2.0.14"
   }
 }
