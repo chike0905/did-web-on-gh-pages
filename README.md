@@ -3,7 +3,7 @@ This implementation generates and publishes a did:web on GitHub Pages.
 - https://w3c-ccg.github.io/did-method-web/
 
 ## Environment
-- Node.js 16.14.0
+- Node.js 18.17.1
 
 ## Usage
 ### Generate and Publish your DID Document

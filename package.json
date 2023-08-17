@@ -11,9 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "did-jwt": "^6.0.0",
-    "jose": "^4.6.0",
+    "did-jwt": "^7.2.5",
+    "jose": "^4.14.4",
     "readline-sync": "^1.4.10",
-    "web-did-resolver": "^2.0.14"
+    "web-did-resolver": "^2.0.27"
   }
 }
